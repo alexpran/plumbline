@@ -1,0 +1,21 @@
+# Plumbline — Omission Catalog
+#
+# A living, append-only record of brief insufficiencies, one entry per real drift episode.
+# See kpis/03-omission-catalog.md for the full spec, recording rules, and worked examples.
+#
+# Entry schema (copy and fill, newest at the bottom; never delete entries):
+#
+# - id: OC-NNN                  # sequential, zero-padded
+#   date: YYYY-MM-DD
+#   feature: "Short identifier of the feature being built"
+#   drift_type: "One-line description of what went wrong"
+#   detected_by: "ui-test | structural-check | code-review | runtime"
+#   brief_omission: "What the brief failed to specify, in one sentence"
+#   category: "kebab-case-slug"  # reuse existing categories; let them emerge from data
+#   preventable_by:
+#     - kpi: brief-linting | assumption-surfacing
+#       signal: "What signal would have caught this"
+#   cost_of_drift: "Rough estimate: minutes lost, rework cycles, user impact"
+#   notes: "Optional context for future-you."
+
+entries: []
